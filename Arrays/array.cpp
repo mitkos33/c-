@@ -10,7 +10,7 @@ void  arraySum() {
     cout << "Enter size of array: ";
     cin >> n;
     const int index = n;
-    int array[index];
+    int* array = new int[n];
 
     for (int i = 0; i < index; i++) {
         cout << "Enter number: ";
@@ -26,6 +26,7 @@ void  arraySum() {
     array[0] = 10;
 
     cout << array[0] << endl;
+    delete[] array;
 }
 
 int main() {
