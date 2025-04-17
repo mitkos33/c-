@@ -9,8 +9,15 @@ void  arraySum() {
     int n = 1, sum = 0;
     cout << "Enter size of array: ";
     cin >> n;
-    const int index = n;
-    int* array = new int[n];
+    const long index = n;
+
+    if (n >10)
+    {
+       cout << "Invalid size of array" << endl;
+       return;
+    }
+    
+    int* array = new int[index];
 
     for (int i = 0; i < index; i++) {
         cout << "Enter number: ";
